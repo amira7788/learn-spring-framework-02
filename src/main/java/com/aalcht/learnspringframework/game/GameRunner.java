@@ -1,8 +1,12 @@
 package com.aalcht.learnspringframework.game;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
 public class GameRunner {
     private GamingConsol game;
-    public GameRunner(GamingConsol game) {
+    public GameRunner(@Qualifier("SuperContraGameQualifier")GamingConsol game) {
         this.game = game;
     }
 
