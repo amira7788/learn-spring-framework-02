@@ -1,8 +1,9 @@
 package com.aalcht.learnspringframework.examples.c1;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+//@Component
+@Repository
 public class MysqlDataDbDataService implements DataService{
     @Override
     public int[] retrieveData() {

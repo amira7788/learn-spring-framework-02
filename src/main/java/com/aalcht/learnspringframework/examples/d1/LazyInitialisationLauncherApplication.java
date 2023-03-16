@@ -11,7 +11,8 @@ import java.util.Arrays;
 @Component
 class ClassA {}
 @Component
-//By default components and beans and beans on configurations are Eager initilized
+//By default components and beans and beans on configurations
+// are Eager initialized
 @Lazy
 class ClassB {
     private  ClassA classA;

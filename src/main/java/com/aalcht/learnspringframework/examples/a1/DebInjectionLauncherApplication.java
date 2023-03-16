@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 //setter injection and constructor injection
-//YourBusinessClass have 2 Dependacy 1 and 2
+//YourBusinessClass have 2 Dependency 1 and 2
 @Component
 class YourBusinessClass{
 //field injection with Autowired
@@ -17,7 +17,7 @@ class YourBusinessClass{
 
     Dependency2 dependency2;
 
-    //constractor injection we don't need a @Autowired it is recommended
+    //constructor injection we don't need a @Autowired it is recommended
     public YourBusinessClass(Dependency1 dependency1, Dependency2 dependency2) {
         System.out.println("Constructor Injection - YourBusinesClass ");
         this.dependency1 = dependency1;

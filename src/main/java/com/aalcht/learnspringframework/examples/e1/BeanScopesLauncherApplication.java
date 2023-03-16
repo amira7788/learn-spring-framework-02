@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 @Component
+@Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)
 class NormalClass {
 }
 
